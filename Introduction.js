@@ -12,8 +12,10 @@
 //     alert(1)
 // })
 
-// $(document).ready(function(){
-//     let box1 = $("#box-1")
+// $(document).ready(function () {
+//     let box1 = $("#box-1").html()
 //     console.log(box1);
-    
+
+//     let box2 = $("#box-2").html()
+//     console.log(box2);
 // })
