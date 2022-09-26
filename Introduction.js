@@ -19,8 +19,6 @@
 //     let box2 = $("#box-2").html()
 //     console.log(box2);
 // })
-<<<<<<< Updated upstream
-=======
 
 // ************************************** Jquery Selectors ************************************** 
 
@@ -63,4 +61,3 @@ $(document).ready(function () {
     //     card.css("color", "#fff")
     // })
 })
->>>>>>> Stashed changes
