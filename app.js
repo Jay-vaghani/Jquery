@@ -300,3 +300,215 @@ $(document).ready(function () {
     // console.log(cardIdName);
 
 })
+
+
+// ************************************** Jquery Set Methods In Html Element ************************************** 
+
+
+// (1) html
+// (2) text
+// (3) attr
+
+
+$(document).ready(function () {
+    $(".btn-primary").click(function () {
+
+        // ******************* Set Text Method *******************
+
+
+        // $("h3").text("New Heading")
+
+
+        // ******************* Set HTML Method *******************
+
+
+        // $("h3").text("<b>New Heading</b>") // Can Not Create Html Element
+
+        // $("p").html("<b>P tag</b>") // Can Create Html Element 
+
+
+        // ******************* Set Attribute Method (class, id) *******************
+
+
+        // $("h3").attr("class", "text-center")
+
+    })
+})
+
+
+// ************************************** Jquery Add Remove and Toggle Class ************************************** 
+
+// (1) addClass
+// (2) removeClass
+// (3) toggleClass
+
+
+$(document).ready(function () {
+
+    // ******************* Add Class In Element *******************
+
+
+    // $(".add").click(function () {
+    //     $("h3").addClass("text-center")
+    // })
+
+
+    // ******************* Remove Class In Element *******************
+
+
+    // $(".remove").click(function () {
+    //     $("h3").removeClass("text-center")
+    // })
+
+
+    // ******************* Toggle Class In Element *******************
+
+
+    // $(".toggle").click(function () {
+    //     $("h3").toggleClass("text-center")
+    // })
+
+})
+
+
+// ************************************** Jquery CSS Methods ************************************** 
+
+
+// ******************* Adding Multiple Css Properties *******************
+
+
+
+$(document).ready(function () {
+
+    // $(".add").click(function () {
+    //     $(".card").css({
+    //         "backgroundColor": "#0d6efd",
+    //         "color": "#fff"
+    //     })
+    // })
+
+})
+
+
+// ************************************** Jquery On & Off Method Methods ************************************** 
+
+
+// (1) on
+// (2) off
+
+$(document).ready(function () {
+
+
+    // ******************* Adding Multiple Events In Element *******************
+
+
+    // $(".card").on({
+    //     "click": function () {
+    //         $(this).removeClass("bg-info bg-danger")
+    //         $(this).addClass("bg-primary text-white")
+    //     },
+
+    //     "mouseover": function () {
+    //         $(this).addClass("bg-info text-white")
+    //     },
+
+    //     "mouseout": function () {
+    //         $(this).addClass("bg-danger text-white")
+    //     },
+
+    // })
+
+
+    // ******************* Removing Multiple Events In Element *******************
+
+
+    // $(".remove").click(function () {
+    //     $(".card").off("mouseover mouseout")
+    // })
+
+})
+
+
+// ************************************** Jquery Append & Prepend Method ************************************** 
+
+
+// (1) append
+// (2) prepend
+
+
+$(document).ready(function () {
+
+
+    // ******************* Add List After Element *******************
+
+
+    // $(".append").click(function () {
+    //     $(".list-group").append("<li class='list-group-item'>Item append</li>")
+    // })
+
+
+    // ******************* Add List Before Element *******************
+
+
+    // $(".prepend").click(function () {
+    //     $(".list-group").prepend("<li class='list-group-item'>Item prepend</li>")
+    // })
+
+})
+
+
+// ************************************** Jquery After & Before Method ************************************** 
+
+
+// (1) after
+// (2) before
+
+
+$(document).ready(function () {
+
+
+    // ******************* Add List After Element *******************
+
+
+    $(".append").click(function () {
+        $(".list-group").after("<li class='list-group-item'>Item append</li>")
+    })
+
+
+    // ******************* Add List Before Element *******************
+
+
+    // $(".prepend").click(function () {
+    //     $(".list-group").prepend("<li class='list-group-item'>Item prepend</li>")
+    // })
+
+})
+
+
+// ************************************** Jquery Empty & Remove Method ************************************** 
+
+
+// (1) empty  // Only Remove Content Inside Element
+// (2) remove // Remove Element 
+
+
+
+$(document).ready(function () {
+
+
+    // ******************* Remove Content Inside Element *******************
+
+
+    $(".empty").click(function () {
+        $(".card").empty()
+    })
+
+
+    // ******************* Remove Element *******************
+
+
+    $(".remove").click(function () {
+        $(".card").remove()
+    })
+
+})
