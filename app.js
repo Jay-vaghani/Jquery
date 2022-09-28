@@ -499,16 +499,217 @@ $(document).ready(function () {
     // ******************* Remove Content Inside Element *******************
 
 
-    $(".empty").click(function () {
-        $(".card").empty()
-    })
+    // $(".empty").click(function () {
+    //     $(".card").empty()
+    // })
 
 
     // ******************* Remove Element *******************
 
 
-    $(".remove").click(function () {
-        $(".card").remove()
-    })
+    // $(".remove").click(function () {
+    //     $(".card").remove()
+    // })
 
 })
+
+
+
+// ************************************** Jquery AppendTo & PrependTo Method ************************************** 
+
+// (1) after
+// (2) before
+
+
+$(document).ready(function () {
+
+
+    // ******************* Add List After Element *******************
+
+
+    // $(".appendto").click(function () {
+    //     $("<li class='list-group-item'>New Item</li>").appendTo(".list-group")
+    // })
+
+
+    // ******************* Add List Before Element *******************
+
+
+    // $(".prependto").click(function () {
+    //     $("<li class='list-group-item'>New Item</li>").prependTo(".list-group")
+    // })
+})
+
+
+// ************************************** Jquery Clone Method ************************************** 
+
+
+
+$(document).ready(function () {
+
+    // $(".clone").click(function () {
+    //     $(".card h3").clone().appendTo(".card2")
+    //     $(".card p").clone().appendTo(".card2")
+    // })
+
+})
+
+
+
+// ************************************** ReplaceWith & ReplaceAll ************************************** 
+
+// (1) replaceWith
+// (2) replaceAll
+
+
+$(document).ready(function () {
+
+
+    // ******************* Replace Element With Replace With *******************
+
+
+    // $(".replaceWith").click(function () {
+
+    // $(".card h3").replaceWith("<h2>New Heading</h2>")
+
+    // $(".card h3").replaceWith("New Heading")
+
+    // })
+
+
+    // ******************* Replace Element With Replace All *******************
+
+
+    // $(".replaceAll").click(function () {
+
+    // $("<h2>New Heading</h2>").replaceAll(".card h3")
+
+    // $("New Heading").replaceAll(".card h3") // Must Give Content Inside Element
+
+    // })
+
+})
+
+
+// ************************************** Jquery Wrap & UnWrap Method ************************************** 
+
+
+// (1) wrap 
+// (2) unWrap
+
+
+$(document).ready(function () {
+
+
+    // ******************* Wrapping Element With Wrap *******************
+
+
+    // $(".wrap").click(function () {
+    //     $(".list-group span").wrap("<li class='list-group-item'></li>")
+    // })
+
+
+    // ******************* Unwrapping Element With UnWrap *******************
+
+
+    // $(".unWrap").click(function () {
+    //     $(".list-group span").unwrap()
+    // })
+
+})
+
+
+// ************************************** Jquery WrapAll & WrapInner Method ************************************** 
+
+
+// (1) wrapAll 
+// (2) wrapInner
+
+
+$(document).ready(function () {
+
+
+    // ******************* Wrapping Element With Wrap All Methode *******************
+
+
+    // $(".wrapAll").click(function () {
+
+    //     $(".card p").wrapAll("<div class='bg-info p-3 rounded-3'></div>")
+
+    // })
+
+
+    // ******************* Creating Element Inside Element *******************
+
+
+    // $(".wrapInner").click(function () {
+
+    //     $("h1").wrapAll("<i></i>")
+
+    // })
+
+})
+
+
+
+// ************************************** Jquery Width & Height Methods ************************************** 
+
+
+
+// (1) width
+// (2) innerWidth
+// (3) outerWidth 
+// (4) outerWidth true
+
+// (5) hight
+// (6) innerHight
+// (7) outerHight 
+// (8) outerHight true
+
+
+
+$(document).ready(function () {
+
+
+
+    $(".width").click(function () {
+
+        // ******************* Set Element Width *******************
+
+
+        // $(".card").width("80%")
+
+
+        // ******************* Get Element Width *******************
+
+
+        // $(".width1").html(`Width: ${$(".card").width()}`)
+        // $(".width2").html(`Inner Width: ${$(".card").innerWidth()}`)
+        // $(".width3").html(`Outer Width: ${$(".card").outerWidth()}`)
+        // $(".width4").html(`Outer Width True: ${$(".card").outerWidth(true)}`)
+
+    })
+
+
+    $(".hight").click(function () {
+
+
+        // ******************* Set Element Height *******************
+
+
+        // $(".card").height("40%")
+
+
+        // ******************* Get Element Height *******************
+
+
+        // $(".hight1").html(`Height: ${$(".card").height()}`)
+        // $(".hight2").html(`Inner Height: ${$(".card").innerHeight()}`)
+        // $(".hight3").html(`Outer Height: ${$(".card").outerHeight()}`)
+        // $(".hight4").html(`Outer Height True: ${$(".card").outerHeight(true)}`)
+
+    })
+
+
+})
+
