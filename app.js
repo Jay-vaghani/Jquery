@@ -629,7 +629,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
 
-    // ******************* Wrapping Element With Wrap All Methode *******************
+    // ******************* Wrapping Element With Wrap All Method *******************
 
 
     // $(".wrapAll").click(function () {
@@ -713,3 +713,428 @@ $(document).ready(function () {
 
 })
 
+
+
+// ************************************** Jquery Position & Offset Method ************************************** 
+
+
+// (1) position:
+//              *   Gives You The Position Of Element According To Your Parent Element
+//              *   Ignores The Margin And Padding
+//              *   Can Not Set Position Of Element
+
+
+// (2) offset: 
+//            *   Gives You The Exact Position Of Element According To Body
+//            *   Position Absolute
+//            *   Can Set Position Of Element
+
+
+
+
+$(document).ready(function () {
+
+    // Get Position Of Element 
+
+
+    // $(".positionBtn").click(function () {
+    //     console.log($(".card").position());
+
+    //     $(".position1").html(`Top: ${$(".card .content").position().top} <br> Left: ${$(".card").position().left}`)
+
+    // })
+
+
+    // Get Offset Of Element 
+
+
+    // $(".offsetBtn").click(function () {
+    //     console.log($(".card").offset());
+
+    //     $(".offset1").html(`Top: ${$(".card .content").offset().top} <br> Left: ${$(".card").offset().left}`)
+
+
+    // })
+
+
+    // Set Offset Of Element 
+
+
+    // $(".offsetBtn").click(function () {
+
+    //     $(".card .content").offset({
+    //         top: 0,
+    //         left: 0
+    //     })
+
+    // })
+
+
+})
+
+
+// ************************************** Jquery  Scroll Top & Scroll Left Method ************************************** 
+
+
+
+// (1) scrollTop
+// (2) scrollLeft
+
+
+$(document).ready(function () {
+
+    // $("body").css("width", "120%")
+
+    // // Get Scroll Values 
+
+    // $(window).scroll(function () {
+    //     console.clear()
+
+    //     // Scroll Top 
+
+    //     console.log($(window).scrollTop());
+
+    //     // Scroll Left 
+
+    //     console.log($(window).scrollLeft());
+    // })
+
+
+    // // Set Scroll Values 
+
+    // $(".arrowUp").click(function () {
+    //     $(window).scrollTop(0)
+    // })
+
+    // $(".arrowLeft").click(function () {
+    //     $(window).scrollLeft(0)
+    // })
+
+
+})
+
+
+
+// ************************************** Jquery  Hide, Show And Toggle Method ************************************** 
+
+// (1) hide
+// (2) show
+// (3) toggle
+
+
+
+$(document).ready(function () {
+
+
+    // Hide Element Using Hide Method
+
+
+    // $(".hide").click(function () {
+    //     $(".card").hide()
+    // })
+
+
+    // Hide Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".hide").click(function () {
+    //     $(".card").hide(300)
+    // })
+
+
+    // Hide Method Width Callback Function
+
+    // $(".hide").click(function () {
+    //     $(".card").hide(300, function(){
+    //         $(".h2").text("Hide")
+    //     })
+    // })
+
+    // Show Element Using Show Method
+
+
+    // $(".show").click(function () {
+    //     $(".card").show()
+    // })
+
+
+    // Show Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".show").click(function () {
+    //     $(".card").show(300)
+    // })
+
+
+    // Show Method Width Callback Function
+
+
+    // $(".show").click(function () {
+    //     $(".card").show(300, function(){
+    //         $(".h2").text("Show")
+    //     })
+    // })
+
+
+    // Hide And Show Element Using Toggle Method
+
+
+    // $(".toggle").click(function () {
+    //     $(".card").toggle()
+    // })
+
+
+    // Hide And Show Element Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".toggle").click(function () {
+    //     let x = $(".card").toggle(300)
+    //     console.log(x);
+    // })
+
+
+    // Hide And Show Element Width Callback Function
+
+
+    // $(".toggle").click(function () {
+    //     $(".card").toggle(300, function(){
+    //         $(".h2").text("Toggle")
+    //     })
+    // })
+
+})
+
+
+
+// ************************************** Jquery Fade In, Fade Out, Fade Toggle, Fade To Methods ************************************** 
+
+
+
+// (1) fadeOut
+// (2) fadeIn
+// (3) fadeToggle
+// (4) fadeTo
+
+
+
+
+$(document).ready(function () {
+
+
+
+    // Hide Element Using Fade Out Method
+
+
+    // $(".fadeOut").click(function () {
+    //     $(".card").fadeOut()
+    // })
+
+
+    // Fade Out Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".fadeOut").click(function () {
+    //     $(".card").fadeOut(3000)
+    // })
+
+
+    // Fade Out Method Width Callback Function
+
+
+    // $(".fadeOut").click(function () {
+    //     $(".card").fadeOut(3000, function () {
+    //         $(".h2").text("Fade Out")
+    //     })
+    // })
+
+
+    // Show Element Using FadeIn Method
+
+
+    // $(".fadeIn").click(function () {
+    //     $(".card").fadeIn();
+    // });
+
+
+    // FadeIn Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".fadeIn").click(function () {
+    //     $(".card").fadeIn(3000);
+    // });
+
+
+    // FadeIn Method Width Callback Function
+
+
+    // $(".fadeIn").click(function () {
+    //     $(".fadeIn").fadeIn(300, function () {
+    //         $(".h2").text("FadeIn")
+    //     })
+    // })
+
+
+    // Hide And Show Element Using Fade Toggle Method
+
+
+    // $(".fadeToggle").click(function () {
+    //     $(".card").fadeToggle()
+    // })
+
+
+    // Fade Toggle Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".fadeToggle").click(function () {
+    //     $(".card").fadeToggle(3000)
+    // })
+
+
+    // Fade Toggle Method Width Callback Function
+
+
+    // $(".fadeToggle").click(function () {
+    //     $(".card").fadeToggle(3000, function () {
+    //         $(".h2").text("Fade Toggle")
+    //     })
+    // })
+
+
+    // Fade To Method Width Parameters
+
+
+    // $(".fadeTo").click(function () {
+    //     $(".card").fadeTo(3000, 0 ,function () {
+    //         $(".h2").text("Fade To")
+    //     })
+    // })
+
+})
+
+
+// ************************************** Jquery Slide Up, Slide Down And Slide Toggle Method ************************************** 
+
+// (1) slideUp 
+// (2) slideDown 
+// (3) slideToggle 
+
+
+
+$(document).ready(function () {
+
+
+    // Hide Element Using Slide Up Method
+
+
+    // $(".slideUp").click(function () {
+    //     $(".card").slideUp()
+    // })
+
+
+    // Slide Up Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".slideUp").click(function () {
+    //     $(".card").slideUp(700)
+    // })
+
+
+    // Slide Up Method Width Callback Function
+
+
+    $(".slideUp").click(function () {
+        $(".card").slideUp(700, function () {
+            $(".h2").text("Hide")
+        })
+    })
+
+
+    // Show Element Using Slide Down Method
+
+
+    // $(".slideDown").click(function () {
+    //     $(".card").slideDown()
+    // })
+
+
+    // Slide Down Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".slideDown").click(function () {
+    //     $(".card").slideDown(700)
+    // })
+
+
+    // Slide Down Method Width Callback Function
+
+
+    $(".slideDown").click(function () {
+        $(".card").slideDown(700, function () {
+            $(".h2").text("Slide Down")
+        })
+    })
+
+
+    // Hide And Show Element Using Slide Toggle Method
+
+
+    // $(".slideToggle").click(function () {
+    //     $(".card").slideToggle()
+    // })
+
+
+    // Slide Toggle Method Width Transition (Give Parameters in Milliseconds)
+
+
+    // $(".slideToggle").click(function () {
+    //     $(".card").slideToggle(700)
+    // })
+
+
+    // Slide Toggle Method Width Callback Function
+
+
+    // $(".slideToggle").click(function () {
+    //     $(".card").slideToggle(700, function(){
+    //         $(".h2").text("Toggle")
+    //     })
+    // })
+
+})
+
+
+
+// ************************************** Jquery Animate Method ************************************** 
+
+
+
+$(document).ready(function () {
+
+    $(".container div").css("width", "25%")
+
+    // Animation In Three Perimeters
+
+    // $(".animate").click(function () {
+    //     $(".container div").animate({
+    //         width: "50%",
+    //         height: "250px",
+    //     },
+    //         700,
+    //         function () {
+    //             $(".h2").text("Animation Done")
+    //         })
+    // })
+
+
+    // Animation In order
+
+    // $(".animate").click(function () {
+
+    //     $(".container div").animate({ width: "50%", height: "10%", })
+    //     $(".container div").animate({ left: "50%", height: "10%", })
+    //     $(".container div").animate({ top: "50%", height: "50%", })
+    //     $(".container div").animate({ left: "0%", height: "50%", })
+    //     $(".container div").animate({ width: "50%", height: "30%", }, 300, () => $(".h2").text("Animation Done"))
+
+    // })
+})
