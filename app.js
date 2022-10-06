@@ -1042,11 +1042,11 @@ $(document).ready(function () {
     // Slide Up Method Width Callback Function
 
 
-    $(".slideUp").click(function () {
-        $(".card").slideUp(700, function () {
-            $(".h2").text("Hide")
-        })
-    })
+    // $(".slideUp").click(function () {
+    //     $(".card").slideUp(700, function () {
+    //         $(".h2").text("Hide")
+    //     })
+    // })
 
 
     // Show Element Using Slide Down Method
@@ -1068,11 +1068,11 @@ $(document).ready(function () {
     // Slide Down Method Width Callback Function
 
 
-    $(".slideDown").click(function () {
-        $(".card").slideDown(700, function () {
-            $(".h2").text("Slide Down")
-        })
-    })
+    // $(".slideDown").click(function () {
+    //     $(".card").slideDown(700, function () {
+    //         $(".h2").text("Slide Down")
+    //     })
+    // })
 
 
     // Hide And Show Element Using Slide Toggle Method
@@ -1110,7 +1110,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-    $(".container div").css("width", "25%")
+    // $(".container div").css("width", "25%")
 
     // Animation In Three Perimeters
 
@@ -1137,4 +1137,116 @@ $(document).ready(function () {
     //     $(".container div").animate({ width: "50%", height: "30%", }, 300, () => $(".h2").text("Animation Done"))
 
     // })
+})
+
+
+// ************************************** Jquery Animate Method ************************************** 
+
+
+// (1) stop // also work with other animation in Jquery 
+
+
+// $(document).ready(function () {
+
+//     $(".container .bg-primary").css({
+//         width: "50%",
+//         height: "250px",
+//     })
+
+//     // Animation In Three Perimeters
+
+//     $(".animate").click(function () {
+//         $(".container div").animate({
+//             width: "50%",
+//             height: "250px",
+//             left: "50%",
+//         },
+//             2000,
+//             function () {
+//                 $(".h2").text("Animation Done")
+//             })
+
+//         $(".container div").animate({
+//             height: "350px",
+//         },
+//             2000,
+//             function () {
+//                 $(".h2").text("Animation Done")
+//             })
+//     })
+
+//     $(".animate").click(function () {
+//         $(".stop").click(function () {
+//             $(".container div").stop(true, true)
+//         })
+//     })
+
+// })
+
+
+// ************************************** Jquery Method Chaining ************************************** 
+
+
+// $(document).ready(function () {
+//     $(".click").click(function () {
+
+//         $(".card").css({
+//             backgroundColor: "blue",
+//             color: "#fff"
+//         }).slideUp(700).slideDown(300)
+//     })
+// })
+
+
+// ************************************** Jquery parent, parentsUntil, closest, offsetParent ************************************** 
+
+
+
+// (1) parent
+// (2) parents 
+// (3) parentsUntil
+// (4) closest
+// (5) offsetParent
+
+
+
+$(document).ready(function () {
+
+    // $(".click").click(function () {
+    //     $("#2").parent().css({
+    //         backgroundColor: "blue",
+    //         color: "#fff"
+    //     }).slideUp(700).slideDown(300)
+    // })
+
+
+    // $(".click").click(function () {
+    //     $("#2").parents().css({
+    //         backgroundColor: "blue",
+    //         color: "#fff"
+    //     }).slideUp(700).slideDown(300)
+    // })
+
+    // Only Work To Direct Element 
+
+    // $(".click").click(function () {
+    //     $("#2").parents(".row").toggle(700)
+    // })
+
+
+
+    // $(".click").click(function () {
+
+    //     $("#Card-id3").parentsUntil("#Card-id1").toggle(700)
+    // })
+
+
+    // $(".click").click(function () {
+    //     $("#2").offsetParent().toggle(700)
+    // })
+
+    $(".click").click(function () {
+        $("#2").closest("div").slideUp(700).slideDown(300)
+    })
+
 })
